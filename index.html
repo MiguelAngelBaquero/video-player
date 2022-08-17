@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A simple web video player coded by Miguel Baquero and designed by Leonidas Esteban González."
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>Video Player</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="player">
+        <video
+          id="video"
+          src="https://va.media.tumblr.com/tumblr_qxat8bCAoK1yfdkph_720.mp4"
+          poster="https://64.media.tumblr.com/tumblr_qxat8bCAoK1yfdkph_frame1.jpg
+          "
+          width="400"
+        ></video>
+        <div class="player-overlay">
+          <h2 class="player-title">Music to code</h2>
+          <div class="player-actions">
+            <button
+              class="button"
+              id="backward"
+              aria-label="Go back 10 seconds"
+              title="Go back 10 seconds"
+            ></button>
+            <button
+              class="button"
+              id="play"
+              aria-label="Play"
+              title="Play"
+            ></button>
+            <button
+              class="button"
+              id="pause"
+              hidden
+              aria-label="Pause"
+              title="Pause"
+            ></button>
+            <button
+              class="button"
+              id="fordward"
+              aria-label="Fast fordward 10 seconds"
+              title="Fast fordward 10 seconds"
+            ></button>
+          </div>
+          <div class="player-progress">
+            <input
+              aria-label="Progress bar"
+              title="Progress bar"
+              type="range"
+              name=""
+              id="progress"
+              min="0"
+              max="100"
+              step="0.1"
+              value="0"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
